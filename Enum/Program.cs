@@ -1,27 +1,31 @@
-﻿using System;
+﻿using Course.Entities;
+using System;
+using Course.Entities.Enums;
 
-namespace Enum
+namespace Curso
 {
     class Program
     {
         static void Main(string[] args)
         {
-          
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment
+            };
+
+            Console.WriteLine(order);
+
+            string txt = OrderStatus.PendingPayment.ToString();
+
+            Console.WriteLine(txt);
+
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+
+            Console.WriteLine(os);
         }
     }
 
-    enum OrderStatus : int
-    {
-        PendingPayment = 0,
-        Processing = 1,
-        Shipped = 2,
-        Delivered = 3
-    }
 
-    class Order
-    {
-       public int Id { get; set; }
-        public DateTime Moment { get; set; }
-        public OrderStatus Status { get; set; }
-    }
 }

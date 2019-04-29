@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enum", "Enum\Enum.csproj", "{B90BED8D-5C28-49BB-A176-EBE7BCE40937}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course", "Enum\Course.csproj", "{B90BED8D-5C28-49BB-A176-EBE7BCE40937}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

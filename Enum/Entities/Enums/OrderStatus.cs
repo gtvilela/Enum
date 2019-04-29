@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Curso.Entities.Enums
+namespace Course.Entities.Enums
 {
         enum OrderStatus : int
         {
